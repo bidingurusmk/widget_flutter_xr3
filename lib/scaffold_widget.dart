@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:widget_1/image_widget.dart';
 
+import 'date_widget.dart';
+
 class ScaffoldWidget extends StatefulWidget {
   const ScaffoldWidget({super.key});
 
@@ -35,7 +37,9 @@ class _ScaffoldWidgetState extends State<ScaffoldWidget> {
           Icon(Icons.logout),
         ],
       ),
-      body: ImageWidget(),
+      body: DateWidget(
+        title: "tanggal widget",
+      ),
       bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.red,
           unselectedItemColor: Colors.grey,
