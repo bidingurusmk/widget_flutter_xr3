@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_1/image_widget.dart';
+import 'package:widget_1/row_column.dart';
 import 'package:widget_1/scaffold_widget.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ScaffoldWidget(),
+      home: RowColum(),
     );
   }
 }
