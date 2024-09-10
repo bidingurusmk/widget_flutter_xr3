@@ -29,18 +29,25 @@ class RowColum extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                  color: Colors.blue, borderRadius: BorderRadius.circular(10)),
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(10),
+                  image: DecorationImage(
+                      image: AssetImage("assets/bgovo.png"),
+                      fit: BoxFit.cover)),
               child: Column(
                 children: [
-                  Text("OVO Cash"),
-                  SizedBox(
-                    height: 70,
-                  ),
+                  Text("OVO Cash", style: TextStyle(color: Colors.white)),
+                  Text("Total Saldo:", style: TextStyle(color: Colors.white)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Rp.1.000.000"),
+                      Text("Rp.1.000.000",
+                          style: TextStyle(color: Colors.white, fontSize: 14)),
                       Container(
+                        padding: EdgeInsets.all(4),
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(20)),
                         child: Text("64 Poin"),
                       )
                     ],
