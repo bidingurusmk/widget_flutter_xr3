@@ -54,6 +54,44 @@ class RowColum extends StatelessWidget {
                   )
                 ],
               ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              child: Row(
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    width: 100,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey),
+                        borderRadius: BorderRadius.circular(8)),
+                    child: Column(
+                      children: [
+                        Image(
+                          image: AssetImage("assets/ts.jpg"),
+                        ),
+                        Text("Judul foto"),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    width: 100,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey),
+                        borderRadius: BorderRadius.circular(8)),
+                    child: Column(
+                      children: [
+                        Image(
+                          image: AssetImage("assets/ts.jpg"),
+                        ),
+                        Text("Judul foto"),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
